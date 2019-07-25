@@ -5,30 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Header */
-header {
-    font-family: roboto, arial, san-serif;
-    padding: 30px;
-    text-align: center;
-    text-shadow: 10px;
-    background:
-        linear-gradient(#162126, transparent),
-        linear-gradient(to top left, #143840, transparent),
-        linear-gradient(to top right, #236A73, transparent);
-    background-blend-mode: screen;
-}
-
-header h1 {
-    font-size: 10vw;
-    font-weight: lighter;
-     color: #f3f3f3;
-}
-
-header p {
-    color: #f3f3f3;
-}
-
-
 /* Navigation bar style */
 nav {
     background-color: #292929;
