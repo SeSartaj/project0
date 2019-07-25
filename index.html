@@ -1,188 +1,133 @@
+<!-- Author : Sartaj Ahmad -->
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Company Name</title>
-	<meta charset="utf-8">
-	<style type="text/css">
-		* {
-			box-sizing: border-box;
-		}
-		body {
-			font-family: Arial;
-			padding: 10px;
-			background:#f1f1f1;
-		}
-
-		/* Header/ Website Title */
-		.header {
-			text-align: center;
-			background: #f2f2f2;
-			padding: 50px;
-		}
-
-		.header h1 {
-			font-size: 40px;
-			overflow: auto;
-		}
-
-		.topnav {
-			overflow: hidden;
-			background-color:#333;
-		}
-
-		.topnav a {
-			float: left;
-			display: block;
-			color: #f2f2f2;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-
-		}
-
-		.topnav a:hover {
-			background-color: #ddd;
-			color:black;
-		}
-
-		.leftcolumn, .rightcolumn, .card {
-			overflow: auto;
-		}
-		.leftcolumn {
-			float: left;
-			width: 75%;
-			
-		}
-
-		.rightcolumn {
-			float: right;
-			width: 25%;
-			padding-left: 20px;
-
-		}
-
-		.card {
-			background-color: white;
-			padding: 20px;
-			margin-top: 20px;
-		}
-
-		.row:after {
-			content: "";
-			display: table;
-			clear:both;
-		}
-
-		.fakeimg {
-			background-color: #aaa;
-			width:100%;
-			padding: 20px;
-		}
-
-		/* Footer */
-		.footer {
-		  padding: 20px;
-		  text-align: center;
-		  background: #ddd;
-		  margin-top: 20px;
-		}
-
-		@media screen and (max-width: 800px) {
-			.leftcolumn, .rightcolumn {
-				width: 100%;
-				padding: 0;
-			}
-		}
-
-		@media screen and (max-width: 500px) {
-			.topnav a {
-				float: none;
-				width: 100%;
-			}
-		}
-
-
-	</style>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale =1.0">
 </head>
 <body>
 
-	<!--Header -->
-	<div class="header">
-		<header>
-			<h1>Welcome to Company Name</h1>
-			<p>Resize the browser windows to see the effect</p>
-		</header>
-	</div>
+	<!-- Header -->
+	<header>
+		<h1>Sabit</h1>
+		<p>relax</p>
+	</header>
 
-	<nav class="topnav">
-		<a href="#">Home</a>
-		<a href="#">Our Company</a>
-		<a href="#">Services</a>
-		<a href="#">Join us</a>
+	<!-- Top navigation bar -->
+	<nav>
+		<ul>
+			<li>
+				<a href="#" class="active">Home</a>
+			</li>
+
+			<li>
+				<a href="#">About Us</a>
+			</li>
+
+			<li>
+				<a href="#">Services</a>
+			</li>
+
+			<li>
+				<a href="#">Support Us</a>
+			</li>
+		</ul>
 	</nav>
 
-	<div class="row">
 
-		<div class="leftcolumn">
-			leftcolumn
-			<div class="card">
-				<div class="card">
-     				<h2>TITLE HEADING</h2>
-     				<h5>Title description, Sep 2, 2017</h5>
-      				<div class="fakeimg" style="height:200px;">Image</div>
-				      <p>Some text..</p>
-				      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-   				</div>
-			</div>
-			<div class="card">
-				card3
-			</div>
-			<div class="card">
-				<div class="card">
-     				<h2>TITLE HEADING</h2>
-     				<h5>Title description, Sep 2, 2017</h5>
-      				<div class="fakeimg" style="height:200px;">Image</div>
-				      <p>Some text..</p>
-				      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-   				</div>
-			</div>
-		</div>
+<div class="body_class">
+		<h1>Fixed Top Navigation Bar</h1>
+		<h2>Scroll this page to see the effect</h2>
+		<h2>The navigation bar will stay at the top of the page while scrolling</h2>
 
-		<div class="rightcolumn">
-			rightcolumn
-			<div class="card">
-				<div class="card">
-     				<h2>Right card1</h2>
-     				<h5>Title description, Sep 2, 2017</h5>
-      				<div class="fakeimg" style="height:200px;">Image</div>
-				      <p>Some text..</p>
-				      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-   				</div>
-			</div>
-			<div class="card">
-				<div class="card">
-     				<h2>Right Card 2</h2>
-     				<h5>Title description, Sep 2, 2017</h5>
-      				<div class="fakeimg" style="height:200px;">Image</div>
-				      <p>Some text..</p>
-				      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-   				</div>
-			</div>
-			<div class="card">
-				card2
-			</div>
-			<div class="card">
-				card4
-			</div>
-		</div>
-		
-	</div>
-
-	<div class="footer">
-		<h2>Footer</h2>
-	</div>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
 
 
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+
+
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+
+
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+		<p>Some text some text some text some text..</p>
+</div>
 </body>
 </html>

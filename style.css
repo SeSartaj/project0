@@ -1,0 +1,83 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    font-family: roboto, arial, san-serif;
+    padding: 30px;
+    text-align: center;
+    text-shadow: 10px;
+    background:
+        linear-gradient(#162126, transparent),
+        linear-gradient(to top left, #143840, transparent),
+        linear-gradient(to top right, #236A73, transparent);
+    background-blend-mode: screen;
+}
+
+header h1 {
+    font-size: 10vw;
+    font-weight: lighter;
+     color: #f3f3f3;
+}
+
+header p {
+    color: #f3f3f3;
+}
+
+
+/* Navigation bar style */
+nav {
+    background-color: #292929;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+}
+
+nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+     
+}
+
+ul > li > a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.active
+{
+    background-color: #353535;
+}
+
+/* Body Style */
+.body_class {
+    margin:50px;
+}
+
+ul > li > a:hover:not(.active){
+    background-color: #323232;
+}
+
+@media screen and (max-width: 600px) {
+    ul > li {
+        width: 100%;
+    }
+     nav {
+        position: static;
+     }
+
+     header h1 {
+        size: 16px;
+     }
+}
