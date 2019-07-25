@@ -7,7 +7,7 @@
 
 /* Navigation bar style */
 nav {
-    background-color: #292929;
+    background-color: #222;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
@@ -42,7 +42,7 @@ ul > li > a {
 }
 
 ul > li > a:hover:not(.active){
-    background-color: #323232;
+    background-color: #292929;
 }
 
 @media screen and (max-width: 600px) {
