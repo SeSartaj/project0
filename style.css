@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
 /* Navigation bar style */
 nav {
     background-color: #222;
@@ -25,11 +29,36 @@ nav > ul {
 
 ul > li > a {
     display: block;
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+    color: #f2f2f2;
+}
+#brand_inside {
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    display: none;
     padding: 12px;
     text-decoration: none;
     text-align: center;
     color: white;
+    font-weight: bold;
+
+}
+#brand_outside {
+    float: left;
+    font-family: Ariaal, sans-serif;
+    font-size: 18px;
+    display: block;
+    padding: 12px;
+    margin-left: 50px;
     text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
 }
 
 .active
@@ -42,8 +71,10 @@ ul > li > a {
     margin:50px;
 }
 
-ul > li > a:hover:not(.active){
+ul > li > a:hover:not(.active ):not(#brand_inside){
     background-color: #292929;
+    color: white;
+
 }
 
 @media screen and (max-width: 600px) {
@@ -56,5 +87,13 @@ ul > li > a:hover:not(.active){
 
      header h1 {
         size: 16px;
+     }
+
+     #brand_inside {
+        display: block;
+     }
+
+     #brand_outside {
+        display: none;
      }
 }
