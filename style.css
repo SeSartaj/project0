@@ -11,12 +11,13 @@ body {
 }
 
 /* Navigation bar style */
+
 nav {
     background-color: #222;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    box-shadow: 0 2px 5px 0;
+    box-shadow: 0 4px 2px 0;
 
 }
 
@@ -42,6 +43,7 @@ ul > li > a {
     font-size: 21px;
     display: none;
     padding: 12px;
+    padding-top: 0;
     text-decoration: none;
     text-align: center;
     color: white;
@@ -54,7 +56,7 @@ ul > li > a {
     font-size: 18px;
     display: block;
     padding: 12px;
-    margin-left: 50px;
+    margin-left: 25px;
     text-decoration: none;
     text-align: center;
     color: white;
@@ -62,16 +64,30 @@ ul > li > a {
 
 }
 
+input#menu {
+    display: none;
+}
+
 .active
 {
     background-color: #353535;
 }
 
-/* Body Style */
+ul > li > a:hover:not(.active ):not(#brand_inside){
+    background-color: #292929;
+    color: white;
 
+}
+
+
+/*  End of Navigation bar style */
+
+
+
+/*header Style */
 .bcard {
     width: 100%;
-    height: 95vh;
+    height: 40vh;
 }
 
 
@@ -82,12 +98,29 @@ ul > li > a {
 
 }
 
+/*End of Header Style */
 
-ul > li > a:hover:not(.active ):not(#brand_inside){
-    background-color: #292929;
-    color: white;
 
+/* Body Style */
+.main_article {
+    padding: 20px;
+    font-family: Arial, sans-serif
 }
+
+.main_article > h1{
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* End ofBody Style */
+
+
+/* Style for Responsiveness */
 
 @media screen and (max-width: 600px) {
     ul > li {
@@ -102,10 +135,37 @@ ul > li > a:hover:not(.active ):not(#brand_inside){
      }
 
      #brand_inside {
-        display: block;
+        display: none;
      }
 
      #brand_outside {
         display: none;
      }
+
+     .menu-content {
+    max-height: 0;
+    overflow: hidden;
+    font-family: Ariaal, sans-serif;
+    }
+
+    nav label {
+    width: 36px;
+    height: 36px;
+    display: block;
+    cursor: pointer;
+    background: url(img/menu.png) no-repeat center center;
+}
+
+input#menu {
+    display: none;
+}
+
+input:checked +label {
+    background-image: url(img/close.png);
+}
+
+
+input:checked ~ .menu-content {
+    max-height: 100%;
+}
 }
