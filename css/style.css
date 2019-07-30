@@ -132,6 +132,7 @@ ul > li > a:hover:not(.-active-m ):not(#brand_inside){
 {
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
     padding: 15%;
+    height: 90vh;
 }
 
 .photo
@@ -163,6 +164,7 @@ footer {
     font-size: 9px;
     color: gray;
     padding: 10px;
+    height: 10vh;
 
 }
 
