@@ -107,7 +107,7 @@ ul > li > a:hover:not(.-active-m ):not(#brand_inside){
     height: 36px;
     display: block;
     cursor: pointer;
-    background: url('../img/menu.png') no-repeat center center;
+    background: url('../img/menu3.png') no-repeat center center;
     }
 
     input#menu {
@@ -115,7 +115,7 @@ ul > li > a:hover:not(.-active-m ):not(#brand_inside){
     }
 
     input:checked +label {
-        background-image: url('../img/close.png');
+        background-image: url('../img/cancel3.png');
     }
 
 
